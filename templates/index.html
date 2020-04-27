@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Davis Gramza is a student who has a passion for software development">
+        <meta name="keywords" content="Software, Portfolio, HTML, CSS, Javascript, Python, Flask, Web Development">
+        <meta name="author" content="Davis Gramza">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+        <title>Davis Gramza | Student, Software Engineer</title>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <header id="sidebar">
+            <h1>Davis Gramza</h1>
+            <img src="{{ url_for('static', filename='img/davis.jpg') }}">
+            <p>
+                I'm Davis Gramza and this is my personal website! 
+                Right now, I'm a student at Lake Forest High School and have a passion for
+                software engineering.
+            </p>
+            <p>
+                I develop web applications in Python and Javascript and am working to transition to iOS development.
+                To read more about my experience and projects, look at my <a href="{{ url_for('static', filename='resume.pdf') }}">resume</a>.
+            </p>
+            <p>
+                If you'd like to learn more about me or reach out to me, you can find me on
+                <a href="https://github.com/davisgramza">GitHub</a>, 
+                <a href="https://www.linkedin.com/in/davis-gramza-51965a98">LinkedIn</a>,
+                <a href="https://twitter.com/davisgramza">Twitter</a>,
+                and <a href="https://www.instagram.com/davisgramza">Instagram</a>.
+            </p>
+            <div>
+                <a class="icon-link" href="https://github.com/davisgramza"><i class="fa fa-github"></i></a>
+                <a class="icon-link" href="https://www.linkedin.com/in/davis-gramza-51965a98"><i class="fa fa-linkedin"></i></a>
+                <a class="icon-link" href="https://twitter.com/davisgramza"><i class="fa fa-twitter"></i></a>
+                <a class="icon-link" href="https://www.instagram.com/davisgramza"><i class="fa fa-instagram"></i></a>
+            </div>
+        </header>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</html>
