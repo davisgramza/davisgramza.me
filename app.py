@@ -13,5 +13,5 @@ def index():
 
 @app.route('/static/resume.pdf', methods=['GET'])
 def resume():
-    if request.metho == 'GET':
+    if request.method == 'GET':
         return redirect(url_for('index'))
